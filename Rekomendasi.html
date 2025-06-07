@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projek</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      border-color: #444;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .rating {
+      color: #f39c12;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin: 40px 0 20px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .toggle-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle Mode Gelap -->
+  <div class="toggle-switch">
+    <button id="toggleMode" class="btn btn-outline-secondary btn-sm">🌙 Mode Gelap</button>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Kembali ke Beranda</a>
+    </div>
+  </nav>
+
+  <!-- Judul -->
+  <div class="container">
+    <div class="section-title">Rekomendasi Tempat Lainnya</div>
+    <div class="text-center">Kategori</div>
+
+    <!-- Tombol Filter -->
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-secondary filter-btn" data-filter="all">Semua</button>
+      <button class="btn btn-outline-success filter-btn" data-filter="murah">Murah</button>
+      <button class="btn btn-outline-warning filter-btn" data-filter="instagrammable">Instagrammable</button>
+      <button class="btn btn-outline-danger filter-btn" data-filter="enak">Enak</button>
+      <button class="btn btn-outline-danger filter-btn" data-filter="hiddengem">Hidden Gem</button>
+    </div>
+
+    <div class="row">
+      <!-- Tempat 1 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="hiddengem">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq46KYOm2_k5tRmo-vJ_uaGSHCvy291UBqlKxrgWXDIO9iZIcG0B2wXKtvgyrz1W22qXbG9rtqsHaGaIw0NRlwd3qKkidOwkuSkQm9eVvCtnPCdHsmBTchr7ZoBmH9801nfIXP8=s680-w680-h510-rw" class="card-img-top" alt="Tempat 1">
+          <div class="card-body">
+            <h5 class="card-title">INILO COFFE</h5>
+            <p class="card-text">Cocok untuk nongkrong dan kerja, tempat cozy dengan menu kopi kekinian.</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+            <span class="badge bg-primary">instagrammable</span>
+            <span class="badge bg-success">enak</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1010556494047!2d107.667307946831!3d-6.961551001790869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e93bb2fd4a89%3A0xce1ab5d39b4d6063!2sINILO%20COFFEE!5e0!3m2!1sid!2sid!4v1749038231740!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 2 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="murah">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNDXiYYCPj_DYMoSo8C-fXKlH2x2kPWu1jj5NSP=s680-w680-h510-rw" class="card-img-top" alt="Tempat 2">
+          <div class="card-body">
+            <h5 class="card-title">Mie Kocok & Mie Baso Tetelan Bojes</h5>
+            <p class="card-text">Tempat minimalis buat nge baso santai sore sambil ngopi dan ngemil ringan.</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+            <span class="badge bg-warning text-dark">Enak</span>
+            <span class="badge bg-success text-dark">Murah</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1066049762445!2d107.67236391082395!3d-6.958920508644766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c3b5c40cfc7b%3A0x831e8412a441c76c!2sMie%20Kocok%20%26%20Mie%20Baso%20Tetelan%20Bojes!5e0!3m2!1sid!2sid!4v1749038644612!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 3 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="hiddengem , instagrammable">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npxeuzdcs7ZsOFXgOSw2TGtwIgbo7FSGNeMQnZ4Zg49AvVSNZK2k1KZrzIh0C35g8YgaZrYYQwWPEQDdHrQapeWgO3dWO19SEvOISaCCGBZXCIhtgWAFLY4zBuyVmBYJ-Rxj1U=s680-w680-h510-rw" class="card-img-top" alt="Tempat 3">
+          <div class="card-body">
+            <h5 class="card-title">NUU JII Resto, Coffee & Events</h5>
+            <p class="card-text">Restoran hidden gem dengan nuansa/view yang indah.</p>
+            <p class="rating">⭐⭐⭐⭐☆ (4,7)</p>
+            <span class="badge bg-success">Instagrammable</span>
+            <span class="badge bg-secondary">Hidden Gem</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7920.88390227534!2d107.67465467877994!3d-6.957079390544179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c3004369c447%3A0x149d24983f36ba06!2sNUU%20JII%20Resto%2C%20Coffee%20%26%20Events!5e0!3m2!1sid!2sid!4v1749223352690!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 4 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="murah , instagrammable">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOnYysmhBqIrj0pOdLeeu5EdMB-wv8PgB9cnohV=s680-w680-h510-rw" class="card-img-top" alt="Tempat 4">
+          <div class="card-body">
+            <h5 class="card-title">Surjoy Coffee</h5>
+            <p class="card-text">Buka dari pagi hingga malam, untuk menikmati sebuah kopi.</p>
+            <p class="rating">⭐⭐⭐⭐ (4.7)</p>
+            <span class="badge bg-danger">Murah</span>
+            <span class="badge bg-dark">Instagrammable</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.2541217310818!2d107.66485758125783!3d-6.94921544562496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9122344e93d%3A0x5dae9a909742f8a3!2sSurjoy%20Coffee!5e0!3m2!1sid!2sid!4v1749311810793!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 5 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="instagrammable , enak">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqHjZC3H16tEztHaQIEW8oXAhTgdMLULVx-EDWWI_B8kgnRxPK_C00IXD7OPsJiwpRfAKAk2cR8ccmyIY5LGbqibLbfUYjnRUQmjnqTdmUnZqECGr0OSWGlb0-oaFfL7HsrSVI=s680-w680-h510-rw" class="card-img-top" alt="Tempat 5">
+          <div class="card-body">
+            <h5 class="card-title">Naima Resto</h5>
+            <p class="card-text">Suasana restonya enak banget. Tenang. Dan juga luas tempat restonya.</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.6)</p>
+            <span class="badge bg-danger">Instagrammable</span>
+            <span class="badge bg-success">Enak</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.2525740724936!2d107.66264203502651!3d-6.949582825535462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9f3ff8af8e9%3A0xd4837d057b3836b2!2sNaima%20Resto!5e0!3m2!1sid!2sid!4v1749312286309!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 6 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="murah , instagrammable">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noD-6Wm3AVuau2O8vq6Aw35t--0n-thXlnjaeZyP_NTe3J9pw622jPtgDRlzwdOtN2AXR3Njr3j4hE-LDOg5If0o6i5AWlQYZe2gF6UZ9CP07kQIkReCIBr-u4Iz0h_wAGlZM-y=s680-w680-h510-rw" class="card-img-top" alt="Tempat 5">
+          <div class="card-body">
+            <h5 class="card-title">Tedja Coffee Margahayu</h5>
+            <p class="card-text">Salah satu tempat yg enak buat nongkrong. Makananya juga enak (menurut saya). Selain buat nongkrong, buat Work From Anywhere/Caffe juga bisa jadi salah satu pilihan.</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+            <span class="badge bg-danger">Murah</span>
+            <span class="badge bg-primary">Instagrammable</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.26657850315!2d107.66577242784959!3d-6.946257779414068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9e9a9d55f25%3A0x437e300b085efaa7!2sTedja%20Coffee%20Margahayu!5e0!3m2!1sid!2sid!4v1749312642603!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 7 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="instagrammable">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipO7CdQbsqVUWRAUViEpPkfZ_8ojefkg79Y6IbQN=s680-w680-h510-rw" class="card-img-top" alt="Tempat 5">
+          <div class="card-body">
+            <h5 class="card-title">Numani Bandung</h5>
+            <p class="card-text">Makanannya enak, affordable, sambelnya juara, plusnya banget tempatnya super bersih</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+            <span class="badge bg-danger">Instagrammable</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1335685934977!2d107.66618845984345!3d-6.946125099286786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e911593cd941%3A0x6c823e0e509802fb!2sNumani%20Bandung!5e0!3m2!1sid!2sid!4v1749312941623!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 8 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="murah , enak">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npb4FezfCrsKgCC_9iBCO1Emit7adqD21hgbgsi15LeMdu8plO7vANAURsaO70IizLQ77_u3X57ceTZ18YsgSXCPJnv6QMG64PZ8Y2X0sQFrrOFbE4U0Uk0flJFPKUh7HdnHjdU=s680-w680-h510-rw" class="card-img-top" alt="Tempat 5">
+          <div class="card-body">
+            <h5 class="card-title">Sejajar Kopi</h5>
+            <p class="card-text">Kalau pengen Kopi enak dan makanan enak murah tapi gak murahan rasanya wajib kesini</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+            <span class="badge bg-danger">Murah</span>
+            <span class="badge bg-dark">Enak</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1340450589047!2d107.66659347340473!3d-6.945898784826462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e747c0658121%3A0x8a42d404ef91b9d4!2sSejajar%20Kopi!5e0!3m2!1sid!2sid!4v1749313200248!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 9 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="enak , instagrammable">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr8AH6fiV_EsN5FwdzQqorup0yVJP7ELSCb22rGJYFy22EEkq98_rt3jeO3UQlTm2KmvG3pUXyjv20eOGU7PcSE_20aNwqW83EQytXUANVrgTPbDmcAe3ZNLdA3mKDeUoX6iUY6=s680-w680-h510-rw" class="card-img-top" alt="Tempat 5">
+          <div class="card-body">
+            <h5 class="card-title">Essential Kopi & Distro</h5>
+            <p class="card-text">Kopi essential nya enak, Manis dan creamy ga terlalu strong. crew2nya juga baik & ramah</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
+            <span class="badge bg-secondary">Enak</span>
+            <span class="badge bg-danger">Instagrammable</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1230730382317!2d107.66519956290723!3d-6.951108482812161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e97acb853f83%3A0x4293a4b4d8099df0!2sEssential%20Kopi%20%26%20Distro!5e0!3m2!1sid!2sid!4v1749313648096!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat 10 -->
+      <div class="col-md-4 mb-4 tempat-item" data-kategori="enak , hiddengem">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noih5HN8nHftQSiU-_jVb5Va_RGJ07qxwa4zZUpmkkYu3QLFvuoyIXDQWeAvcwc08P_ZD3ProtCPBNuXypX8QbDi1TRChXoFcBClCN390bF_x847TMB4El3t2nvUwDFAGt_2vKW=s680-w680-h510-rw" class="card-img-top" alt="Tempat 5">
+          <div class="card-body">
+            <h5 class="card-title">Baso Urat Saturnus (BUS)</h5>
+            <p class="card-text">Bakso urat terenak di Bandung, Sambel bawangnya juara pedas dan kasar.</p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.6)</p>
+            <span class="badge bg-danger">Enak</span>
+            <span class="badge bg-success">Hidden Gem</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1209581042935!2d107.66492061316964!3d-6.952112242052799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e92c87cdf8c9%3A0xa390fe55e4db407e!2sBaso%20Urat%20Saturnus%20(BUS)!5e0!3m2!1sid!2sid!4v1749313921271!5m2!1sid!2sid" width="322" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- END -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 mb-3 text-muted">
+    &copy; Projek pemrogramman web - Rekomendasi tempat makan
+  </footer>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Toggle Dark Mode
+    const toggleBtn = document.getElementById('toggleMode');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Mode Terang' : '🌙 Mode Gelap';
+    });
+
+    // Filter Kategori
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const tempatItems = document.querySelectorAll('.tempat-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        tempatItems.forEach(item => {
+          const kategori = item.getAttribute('data-kategori');
+          if (filter === 'all' || kategori.includes(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
